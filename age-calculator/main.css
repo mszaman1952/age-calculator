@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Nunito';
+    font-weight: 400;
+    border: none;
+    outline: none;
+    user-select: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hotpink;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: black;
+    color: white;
+}
+.heading h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 0.04rem;
+    position: relative;
+    user-select: none;
+}
+.main-container {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 85vh;
+    gap: 2rem;
+    background-color: hotpink;
+}
+.main-container h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+.main-container h1::before {
+    content: "";
+    position: absolute;
+    width: 26rem;
+    height: 0.1rem;
+    bottom: 0;
+    left: 0px;
+    background-color: rgb(255, 58, 156);
+}
+.main-container #results {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25rem;
+    background-color: black;
+    color: hotpink;
+    border-radius: 0.7rem;
+    font-weight: 700;
+    padding: 0.8rem 1.1rem;
+    transition: 0.5s linear;
+    transform: translateY(-110px);
+}
+.main-container #results #white {
+    color: white;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    padding: 2rem 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgb(0 0 0 / 67%), inset 0 0 10px rgb(0 0 0 / 67%);
+    user-select: none;
+    z-index: 10;
+}
+.container h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.container #inpt-date {
+    width: 16rem;
+    height: 2rem;
+    font-family: "verdana";
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    padding: 1.3rem 2rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: hotpink;
+    transition: 0.3s ease-in-out;
+    outline: none;
+}
+.container #inpt-date:hover {
+    background-color: rgb(255, 141, 198);
+
+}
+.container #btn {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+.container #btn:hover {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+ 

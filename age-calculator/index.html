@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+     <div class="heading">
+        <h1>Welcome to Age Calculator</h1>
+    </div>
+    <div class="main-container">
+        <h1>Calculate your age</h1>
+        <div class="container">
+            <h3>Enter your birth date</h3>
+            <input type="date" name="date" id="inpt-date" required pattern="\d{4}-\d{2}-\d{2}" min="1900-01-01">
+            <button id="btn" type="submit">check</button>
+        </div>
+        <div id="results">Your Age is: <br><span id="white"></span></div>
+    </div>
+
+   
+    <script src="app.js"></script>
+</body>
+</html>
